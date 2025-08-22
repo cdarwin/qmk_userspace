@@ -171,17 +171,17 @@ KC_LCTL,    KC_LGUI, k45, MO(2),     k48,       KC_RALT,                   KC_RC
 #define LAYOUT_alice_base_wrapper(...) LAYOUT_alice_base(__VA_ARGS__)
 
 /* Base Layers */
-#define _____________3x5_QWERTY_L1_________________      LT(2,KC_Q),    KC_W,    KC_E,    KC_R,    KC_T
-#define _____________3x5_QWERTY_L2_________________      KC_A,    KC_S,    KC_D,    KC_F,    KC_G
-#define _____________3x5_QWERTY_L3_________________      KC_Z,    KC_X,    KC_C,    KC_V,    KC_B
+#define _____________3x5_QWERTY_L1_________________  LT(2,KC_Q),    KC_W,    KC_E,       KC_R,    KC_T
+#define _____________3x5_QWERTY_L2_________________        KC_A,    KC_S,    KC_D,       KC_F,    KC_G
+#define _____________3x5_QWERTY_L3_________________        KC_Z,    KC_X,    KC_C, LT(2,KC_V),    KC_B
 
 #define _____________3x6_QWERTY_L1_________________       KC_TAB, _____________3x5_QWERTY_L1_________________
 #define _____________3x6_QWERTY_L2_________________      KC_LCTL, HRML(_____________3x5_QWERTY_L2_________________)
 #define _____________3x6_QWERTY_L3_________________      KC_LSFT, _____________3x5_QWERTY_L3_________________
 
-#define _____________3x5_QWERTY_R1_________________      KC_Y,    KC_U,    KC_I,    KC_O,    LT(2,KC_P)
-#define _____________3x5_QWERTY_R2_________________      KC_H,    KC_J,    KC_K,    KC_L, KC_SCLN
-#define _____________3x5_QWERTY_R3_________________      KC_N,    KC_M, KC_COMM,  KC_DOT, LT(2,KC_SLSH)
+#define _____________3x5_QWERTY_R1_________________      KC_Y,       KC_U,    KC_I,    KC_O,    LT(2,KC_P)
+#define _____________3x5_QWERTY_R2_________________      KC_H,       KC_J,    KC_K,    KC_L,      KC_SCLN
+#define _____________3x5_QWERTY_R3_________________      KC_N, LT(2,KC_M), KC_COMM,  KC_DOT, LT(2,KC_SLSH)
 
 #define _____________3x6_QWERTY_R1_________________      _____________3x5_QWERTY_R1_________________, KC_BSPC
 #define _____________3x6_QWERTY_R2_________________      HRMR(_____________3x5_QWERTY_R2_________________), KC_ENT
@@ -196,7 +196,7 @@ KC_LCTL,    KC_LGUI, k45, MO(2),     k48,       KC_RALT,                   KC_RC
 #define _____________3x6_NUM_NAV_L2________________    KC_MUTE, HRML(_____________3x5_NUM_NAV_L2________________)
 #define _____________3x6_NUM_NAV_L3________________    KC_VOLD, _____________3x5_NUM_NAV_L3________________
 
-#define _____________3x5_NUM_NAV_R1________________   KC_QUOT, XXXXXXX, XXXXXXX, XXXXXXX,  KC_ENT
+#define _____________3x5_NUM_NAV_R1________________   KC_QUOT, ZM_MUTE, ZM_VMUT, XXXXXXX,  KC_ENT
 #define _____________3x5_NUM_NAV_R2________________    KC_EQL, KC_LEFT, KC_DOWN,   KC_UP, KC_RGHT
 #define _____________3x5_NUM_NAV_R3________________   KC_BSLS, KC_HOME, KC_PGDN, KC_PGUP,  KC_END
 
@@ -214,8 +214,8 @@ KC_LCTL,    KC_LGUI, k45, MO(2),     k48,       KC_RALT,                   KC_RC
 #define _____________3x6_____SYM_L3________________   RGB_RMOD, _____________3x5_____SYM_L3________________
 
 #define _____________3x5_____SYM_R1________________   KC_DQUO, KC_MPRV, KC_MPLY, KC_MNXT, XXX
-#define _____________3x5_____SYM_R2________________   KC_PLUS, KC_RPRN, KC_RBRC, KC_RCBR,   KC_GT
-#define _____________3x5_____SYM_R3________________   KC_PIPE,  IJ_BCK,  DC_NXT,  DC_PRV,  IJ_FWD
+#define _____________3x5_____SYM_R2________________   KC_PLUS, KC_RPRN, KC_RBRC, KC_RCBR, KC_GT
+#define _____________3x5_____SYM_R3________________   KC_PIPE, KC_BTN1, KC_BTN2, KC_BTN3, XXX
 
 #define _____________3x6_____SYM_R1________________   _____________3x5_____SYM_R1________________, DPI_MOD
 #define _____________3x6_____SYM_R2________________   _____________3x5_____SYM_R2________________, XXX
@@ -232,14 +232,14 @@ KC_LCTL,    KC_LGUI, k45, MO(2),     k48,       KC_RALT,                   KC_RC
 #define ___12u_EMPTY_ROW___ XXX, ___10u_EMPTY_ROW___, XXX
 
 /* Thumbs */
-#define ___CHARYBDIS_BASE_L1___ LT(2,KC_TAB), LT(1,KC_BSPC), LT(2,KC_TAB)
-#define ___CHARYBDIS_BASE_L2___ ZM_MUTE, ZM_VMUT
+#define ___CHARYBDIS_BASE_L1___ DRGSCRL, LT(1,KC_BSPC), LT(2,KC_TAB)
+#define ___CHARYBDIS_BASE_L2___ KC_BTN1, KC_BTN2
 #define ___CHARYBDIS_BASE_R1___ LT(2,KC_ENT), LT(1,KC_SPC)
 #define ___CHARYBDIS_BASE_R2___ KC_BTN1
 #define ___CHARYBDIS_BASE______ ___CHARYBDIS_BASE_L1___, ___CHARYBDIS_BASE_R1___, ___CHARYBDIS_BASE_L2___, ___CHARYBDIS_BASE_R2___
 
 #define ___CHARYBDIS_MOUSE_L1___ KC_BTN3, KC_BTN1, KC_BTN2
 #define ___CHARYBDIS_MOUSE_L2___ KC_BTN1, KC_BTN2
-#define ___CHARYBDIS_MOUSE_R1___ KC_BTN2, KC_BTN3
+#define ___CHARYBDIS_MOUSE_R1___ KC_BTN2, KC_BTN1
 #define ___CHARYBDIS_MOUSE_R2___ KC_BTN1
 #define ___CHARYBDIS_MOUSE______ ___CHARYBDIS_MOUSE_L1___, ___CHARYBDIS_MOUSE_R1___, ___CHARYBDIS_MOUSE_L2___, ___CHARYBDIS_MOUSE_R2___

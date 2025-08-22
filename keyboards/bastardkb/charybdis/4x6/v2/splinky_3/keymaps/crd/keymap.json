@@ -2,7 +2,7 @@
     "keyboard": "bastardkb/charybdis/4x6/v2/splinky_3",
     "keymap": "crd",
     "layers": [
-      [ "___12u_NUM_ROW___",
+      [ "ZM_MUTE, ___10u_NUM_ROW___, ZM_VMUT",
         "_____________3x6_QWERTY_L1_________________", "_____________3x6_QWERTY_R1_________________",
         "_____________3x6_QWERTY_L2_________________", "_____________3x6_QWERTY_R2_________________",
         "_____________3x6_QWERTY_L3_________________", "_____________3x5_QWERTY_R3_________________, DRG_TOG",

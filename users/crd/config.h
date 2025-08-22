@@ -2,11 +2,12 @@
 
 #include "wrappers.h"
 
-// #if defined(KEYBOARD_bastardkb_charybdis_4x6)
+#if defined(KEYBOARD_bastardkb_charybdis_4x6)
+    #define CHARYBDIS_DRAGSCROLL_REVERSE_X
 // #   define POINTING_DEVICE_AUTO_MOUSE_ENABLE
 // #   define AUTO_MOUSE_DEFAULT_LAYER 2
 // #   define AUTO_MOUSE_TIME 250
-// #endif
+#endif
 
 // #if defined(SPLIT_KEYBOARD)
     // #undef MASTER_RIGHT
